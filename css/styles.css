@@ -1,0 +1,53 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+
+main {
+    height: 300dvh;
+}
+
+header{
+    background: linear-gradient(60deg, #a14300, #a3c21a 40%);
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: -215px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: slideDown 1500ms ease-out;
+    img {
+        width: 300px;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 2px;
+    }
+}
+
+
+@keyframes slideDown{
+    from{
+        transform: translate3d(-50%, -100%, 0);
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(-50%, 0%, 0%);
+        opacity: 1;
+    }
+} 
