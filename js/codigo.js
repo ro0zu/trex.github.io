@@ -17,7 +17,7 @@ window.addEventListener('scroll' ,() => {
     const scrollFraction = scrollPosition / maxScroll;
 
     // Que frame le toca?
-    const frame = Math.floor(scrollFraction * MAX_FRAMES) || 1;
+    const frame = Math.ceil(scrollFraction * MAX_FRAMES) || 1;
 
     // console.log(frame);
     // Creamos el id del nombre del archivo.
