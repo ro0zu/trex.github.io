@@ -23,5 +23,5 @@ window.addEventListener('scroll' ,() => {
     // Creamos el id del nombre del archivo.
     const id = frame.toString().padStart(3, '0');
 
-    image.src = `/frames/ezgif-frame-${id}.jpg`;
+    image.src = `../frames/ezgif-frame-${id}.jpg`;
 });
